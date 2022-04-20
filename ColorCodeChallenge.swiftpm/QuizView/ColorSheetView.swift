@@ -23,6 +23,11 @@ struct ColorSheetView: View {
                         Text(rRingErrors[index] == "?" ? "-" : "\(rRingErrors[index])%")
                     }
                 }
+                Button {
+                    //https://en.wikipedia.org/wiki/Electronic_color_code
+                } label: {
+                    Label("Wikipedia", systemImage: "network")
+                }.padding(40)
             }.padding()
         }
     }
