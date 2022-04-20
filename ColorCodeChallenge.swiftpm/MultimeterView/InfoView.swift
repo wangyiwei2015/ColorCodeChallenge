@@ -10,8 +10,8 @@ struct InfoView: View {
         Text("5\n\n5\n\n.5"),
         Text("6\n\n6\n\n.25"),
         Text("7\n\n7\n\n.1"),
-        Text("8\n\n-\n\n.05"),
-        Text("9\n\n-\n\n-"),
+        Text("8\n\n8\n\n.05"),
+        Text("9\n\n9\n\n-"),
         Text("-\n\n-1\n\n5"),
         Text("-\n\n-2\n\n10"),
     ]

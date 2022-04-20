@@ -10,7 +10,7 @@ let rRingColors: [Gradient] = {
     return basicGrad
 }()
 let rRingValues: [Int] = [0,1,2,3,4,5,6,7,8,9]
-let rRingScales: [Int] = [0,1,2,3,4,5,6,7,0,0,-1,-2]
+let rRingScales: [Int] = [0,1,2,3,4,5,6,7,8,9,-1,-2]
 let rRingErrors: [String] = ["1","2","?","?","0.5","0.25","0.1","0.05","?","?","5","10","20"]
 
 let rTable = [

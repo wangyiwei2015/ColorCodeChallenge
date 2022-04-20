@@ -19,7 +19,7 @@ struct ColorSheetView: View {
                             .frame(width: 30, height: 30, alignment: .center)
                             .mask(Circle())
                         Text(index < 10 ? "\(index)" : "-").frame(width: 60)
-                        Text(index < 8 ? "10^\(index)" : (index > 9 ? "10^\(9-index)" : "-")).frame(width: 60)
+                        Text(index < 10 ? "10^\(index)" : "10^\(9-index)").frame(width: 60)
                         Text(rRingErrors[index] == "?" ? "-" : "\(rRingErrors[index])%")
                     }
                 }
