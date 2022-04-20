@@ -1,6 +1,9 @@
 import SwiftUI
+import SafariServices
 
 struct ColorSheetView: View {
+    @State var showsWikiPage = false
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack(alignment: .leading, spacing: 10) {
@@ -23,12 +26,29 @@ struct ColorSheetView: View {
                         Text(rRingErrors[index] == "?" ? "-" : "\(rRingErrors[index])%")
                     }
                 }
-                Button {
-                    //https://en.wikipedia.org/wiki/Electronic_color_code
-                } label: {
-                    Label("Wikipedia", systemImage: "network")
-                }.padding(40)
+                HStack {
+                    Spacer()
+                    Button {
+                        showsWikiPage = true
+                    } label: {
+                        Label("Wikipedia", systemImage: "network")
+                    }
+                    Spacer()
+                }.padding(.top, 40)
             }.padding()
+                .sheet(isPresented: $showsWikiPage) {
+                    SafariView(url: URL(string: "https://en.wikipedia.org/wiki/Electronic_color_code")!)
+                }
         }
+    }
+}
+
+struct SafariView: UIViewControllerRepresentable {
+    var controller: SFSafariViewController!
+    init(url: URL) {controller = SFSafariViewController(url: url)}
+    func makeUIViewController(context: Context) -> SFSafariViewController {
+        return controller
+    }
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {
     }
 }
