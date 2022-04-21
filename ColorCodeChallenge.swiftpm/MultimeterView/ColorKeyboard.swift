@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ColorKeyboard: View {
     @Binding var value: [Int]
+    @Binding var showNumbers: Bool
     var inputState: InputState {
         if value.count < 2 {return .value}
         else if value.count < 4 {return .scale}
@@ -12,7 +13,7 @@ struct ColorKeyboard: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
-                .foregroundColor(Color(UIColor.systemBackground))
+                .foregroundColor(.back)
                 .shadow(radius: 8)
             //main
             VStack {
@@ -33,7 +34,7 @@ struct ColorKeyboard: View {
                 }
             }
             ForEach(0...2, id: \.self) {col in
-                KeyboardButton(title: " ", backGrad: rRingColors[row * 3 + col]) {
+                KeyboardButton(title: showNumbers ? "\(row * 3 + col)" : " ", backGrad: rRingColors[row * 3 + col]) {
                     modifyRings(row * 3 + col)
                 }
             }
@@ -56,7 +57,7 @@ extension ColorKeyboard {
     func modifyRings(_ buttonIndex: Int) {
         switch buttonIndex {
         case -1:
-            if !value.isEmpty {value.popLast()}
+            if !value.isEmpty {_ = value.popLast()}
         case -2:
             value = []
         default:

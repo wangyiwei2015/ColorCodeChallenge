@@ -18,7 +18,7 @@ let package = Package(
             targets: ["AppModule"],
             bundleIdentifier: "com.wyw.colorcodechallenge",
             teamIdentifier: "JS2ME2LTBF",
-            displayVersion: "2.0.3",
+            displayVersion: "2.0.4",
             bundleVersion: "1",
             iconAssetName: "AppIcon",
             accentColorAssetName: "AccentColor",

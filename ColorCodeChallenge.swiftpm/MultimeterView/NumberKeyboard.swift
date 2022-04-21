@@ -12,7 +12,7 @@ struct NumberKeyboard: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
-                .foregroundColor(Color(UIColor.systemBackground))
+                .foregroundColor(.back)
                 .shadow(radius: 8)
             //main
             VStack {
@@ -60,10 +60,10 @@ extension NumberKeyboard {
         switch buttonIndex {
         case 0: value = ""
         case 1,2,3: value += String(buttonIndex + 6)
-        case 4: if !value.isEmpty {value.popLast()}
+        case 4: if !value.isEmpty {_ = value.popLast()}
         case 5,6,7: value += String(buttonIndex - 1)
         case 10,11,12: value += String(buttonIndex - 9)
-        case 11,12,13: value += String(buttonIndex - 10)
+        //case 11,12,13: value += String(buttonIndex - 10)
         case 15,17: value += "R"
         case 16: value += "0"
         default: fatalError()

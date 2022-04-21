@@ -40,7 +40,7 @@ struct HomeView: View {
         }.background(Color(UIColor.systemGray6))
             .sheet(isPresented: $isFirstLaunch, onDismiss: {
                 UserDefaults.standard.set(true, forKey: "_LAUNCHED")
-            }) {IntroView().padding()}
+            }) {IntroView()}
     }
     
     @ViewBuilder
@@ -53,7 +53,7 @@ struct HomeView: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .foregroundColor(Color(UIColor.systemBackground))
+                            .foregroundColor(.back)
                         Image(systemName: "text.book.closed")
                             .font(.system(size: 30))
                     }.frame(width: 50, height: 50)
@@ -63,7 +63,7 @@ struct HomeView: View {
                 Spacer()
             }
             ColorSheetView().frame(width: 300)
-                .background(Color(UIColor.systemBackground))
+                .background(Color.back)
         }.offset(x: showsColorSheet ? 0 : 300)
             .animation(.easeInOut(duration: 0.3), value: showsColorSheet)
     }
@@ -72,14 +72,14 @@ struct HomeView: View {
     func HidableMeterView() -> some View {
         HStack(spacing: 0) {
             RIDView().frame(width: 300)
-                .background(Color(UIColor.systemBackground))
+                .background(Color.back)
             VStack {
                 Button {
                     showsMeter.toggle()
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .foregroundColor(Color(UIColor.systemBackground))
+                            .foregroundColor(.back)
                         Image(systemName: "speedometer")
                             .font(.system(size: 30))
                     }.frame(width: 50, height: 50)
@@ -94,8 +94,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}

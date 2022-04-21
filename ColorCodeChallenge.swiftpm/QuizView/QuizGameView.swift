@@ -42,7 +42,8 @@ struct QuizGameView: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill().foregroundColor(Color(UIColor.systemBackground))
+                .fill().foregroundColor(.back)
+                .shadow(color: Color(UIColor(white: 0, alpha: 0.4)), radius: 4, x: 0, y: 3)
         )
         .padding()
         .transition(.asymmetric(

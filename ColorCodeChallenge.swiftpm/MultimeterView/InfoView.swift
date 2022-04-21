@@ -40,7 +40,7 @@ struct InfoView: View {
                         Group {
                             VStack {
                                 Circle().fill()
-                                    .foregroundColor(Color(UIColor.systemBackground))
+                                    .foregroundColor(.back)
                                     .frame(width: 30, height: 30)
                                 Text("Num\n\nScale\n\nTol%")
                                     .multilineTextAlignment(.trailing)

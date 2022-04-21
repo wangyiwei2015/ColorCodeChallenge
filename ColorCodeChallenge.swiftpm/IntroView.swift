@@ -36,7 +36,7 @@ struct IntroView: View {
                             Text("Quickly look up for values of the colors.")
                         }
                     }
-                }
+                }.padding()
             }
             Button {//It doesn't matter if you don't have experience in electronics.
                 mode.wrappedValue.dismiss()
@@ -44,6 +44,7 @@ struct IntroView: View {
                 Text("Start").bold()
                     .foregroundColor(.white)
             }.buttonStyle(QuizGameButtonStyle(width: 220, height: 50, color: .accentColor))
+                .padding()
         }
     }
 }

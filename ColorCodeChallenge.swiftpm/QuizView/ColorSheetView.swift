@@ -10,7 +10,7 @@ struct ColorSheetView: View {
                 Text("Color Cheatsheet").bold()
                     .padding(.vertical)
                 HStack {
-                    Color(UIColor.systemBackground)
+                    Color.back
                         .frame(width: 30, height: 40)
                     Text("Num").frame(width: 60).foregroundColor(.gray)
                     Text("Scale").frame(width: 60).foregroundColor(.gray)

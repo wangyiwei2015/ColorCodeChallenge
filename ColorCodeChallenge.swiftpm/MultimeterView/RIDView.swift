@@ -6,6 +6,7 @@ struct RIDView: View {
     @State var usingSMT = false
     @State var showsPrefs = false
     @State var showsInfo = false
+    @State var colorPadShowsNumbers: Bool = UserDefaults.standard.bool(forKey: "_NUM_ON_COLOR")
     
     @Namespace private var ns
     let defaultAnimation = Animation.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0.5)
@@ -28,11 +29,13 @@ struct RIDView: View {
                 NumberKeyboard(value: $smtSilk)
                     .transition(.offset(y: 300))
             } else {
-                ColorKeyboard(value: $ringColorIndex)
+                ColorKeyboard(value: $ringColorIndex, showNumbers: $colorPadShowsNumbers)
                     .transition(.offset(y: 300))
             }
         }
-        .sheet(isPresented: $showsPrefs, onDismiss: nil) {PrefsView()}
+        .sheet(isPresented: $showsPrefs, onDismiss: {
+            colorPadShowsNumbers = UserDefaults.standard.bool(forKey: "_NUM_ON_COLOR")
+        }) {PrefsView()}
         .sheet(isPresented: $showsInfo, onDismiss: nil, content: {InfoView()})
     }
     
@@ -72,6 +75,13 @@ struct RIDView: View {
     func TopButtons() -> some View {
         VStack {
             HStack {
+                Button {
+                    showsPrefs = true
+                } label: {
+                    Image(systemName: "gear")
+                        .font(.system(size: 24, weight: .regular))
+                        .padding()
+                }
                 Spacer()
                 Button {
                     showsInfo = true
