@@ -20,8 +20,8 @@ struct IntroView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         Text("The game is about colors on resistors.")
                         Group {
-                            LeftLabel("stopwatch", "Chanllenges")
-                            Text("There are 4 levels to chanllenge. Try to select the correct values as fast as possible.")
+                            LeftLabel("stopwatch", "Challenges")
+                            Text("There are 4 levels to challenge. Try to select the correct values as fast as possible.")
                             Text("Knowledge in electronics is related, but not required. Don't worry, as the tools below are always available.")
                         }
                         Divider()
