@@ -32,19 +32,19 @@ struct PrefsView: View {
                             UserDefaults.standard.set(value, forKey: "_NUM_ON_COLOR")
                         })
                     prefButton(systemImg: "square.and.arrow.up.fill",
-                        color: .green, title: "_share"
+                        color: .green, title: localized("_share")
                     ) {showsShare = true}
                     prefButton(systemImg: "star.fill",
-                        color: .blue, title: "_Review"
+                        color: .blue, title: localized("_Review")
                     ) {openURL(reviewURL)}
                     prefButton(systemImg: "exclamationmark.circle.fill",
-                        color: .orange, title: "_issue"
+                        color: .orange, title: localized("_issue")
                     ) {openURL(githubURL)}
                     prefButton(systemImg: "envelope.badge.fill",
-                        color: .blue, title: "_Contact"
+                        color: .blue, title: localized("_Contact")
                     ) {openURL(emailAdd)}
                     prefButton(systemImg: "gearshape.fill",
-                        color: .gray, title: "_settings"
+                        color: .gray, title: localized("_settings")
                     ) {openURL(URL(string: UIApplication.openSettingsURLString)!)}
                     Text("v\(version)").foregroundColor(.gray)
                         .padding(.bottom, 3)

@@ -20,19 +20,19 @@ struct IntroView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         Text("_desc")
                         Group {
-                            LeftLabel("stopwatch", "_Challenges")
+                            LeftLabel("stopwatch", "\(localized("_Challenges"))")
                             Text("_cha_desc_1")
                             Text("_cha_desc_2")
                         }
                         Divider()
                         Group {
-                            LeftLabel("speedometer", "_Multimeter")
+                            LeftLabel("speedometer", "\(localized("_Multimeter"))")
                             Text("_meter_desc")
                             Text("_smt").foregroundColor(.gray)
                         }
                         Divider()
                         Group {
-                            LeftLabel("text.book.closed", "_Cheatsheet")
+                            LeftLabel("text.book.closed", "\(localized("_Cheatsheet"))")
                             Text("_cheatsheet_desc")
                         }
                     }

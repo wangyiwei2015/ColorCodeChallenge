@@ -44,7 +44,7 @@
 
 //QuizView
 "_best" = "Best Score";
-"_None" = "_None";
+"_None" = "None";
 "_easy" = "Easy";
 "_play_easy" = "Play easy";
 "_medium" = "Med";

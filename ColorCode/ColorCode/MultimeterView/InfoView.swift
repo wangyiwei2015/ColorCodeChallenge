@@ -22,18 +22,18 @@ struct InfoView: View {
             ScrollView(.vertical, showsIndicators: true) {
                 VStack(alignment: .leading, spacing: 20) {
                     Group {
-                        LeftLabel("shippingbox.fill", "_Usage")
+                        LeftLabel("shippingbox.fill", localized("_Usage"))
                         Text("_usg_desc")
                     }
                     
                     Group {
                         Divider()
-                        LeftLabel("number.circle.fill", "_numr")
+                        LeftLabel("number.circle.fill", localized("_numr"))
                         Text("_numr_desc")
                         Divider()
                     }
                     
-                    LeftLabel("paintpalette.fill", "_colorcode_t")
+                    LeftLabel("paintpalette.fill", localized("_colorcode_t"))
                     Text("_colorcode_desc")
                     ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top) {
@@ -61,7 +61,7 @@ struct InfoView: View {
                     
                     Group {
                         Divider()
-                        LeftLabel("swift", "_about")
+                        LeftLabel("swift", localized("_about"))
                         Text("_proj_desc")
                         Spacer(minLength: 20)
                     }
