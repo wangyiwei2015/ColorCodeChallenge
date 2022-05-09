@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  ColorCode
+
+  Created by wyw on 2022/5/9.
+  
+*/
+
+//HomeView
+"read_intro" = "- 打开欢迎页 -";
+
+//IntroView
+"_Welcome" = "欢迎";
+"_desc" = "这个小游戏玩的是色环电阻.";
+"_Challenges" = "挑战";
+"_cha_desc_1" = "挑战有四个难度等级；目标是以最快的速度答对所示颜色对应值.";
+"_cha_desc_2" = "本游戏不依赖电子信息相关知识；无需担心，下面的两个工具在游戏中也随时可用.";
+"_Multimeter" = "万用表";
+"_meter_desc" = "输入色环电阻的颜色或 SMD* 的丝印来获取阻值. 注意，你的输入可以获得计算值，但现实中不一定存在这样的电阻.";
+"_smt" = "* Surface mounted devices";
+"_Cheatsheet" = "速查表";
+"_cheatsheet_desc" = "迅速找到每个颜色对应的数值.";
+"_Start" = "开始";
+
+//InfoView
+"_dsms_msg" = "↓ 下滑关闭";
+"_Usage" = "使用方法";
+"_usg_desc" = "很简单，像普通键盘一样键入颜色或数字.";
+"_numr" = "丝印数值表示";
+"_numr_desc" = "SMD 器件尺寸小，因此需要用最少的数字表示它的值. \n  • 'R', 'k', 'M'... 等字母表示一个小数点，并且替换相应单位 (Ω, kΩ, MΩ, etc.), 例如 6R8 = 6.8Ω and 4k7 = 4.7kΩ;\n  • 纯数字的情况：最后一位代表指数, 例如 103 = 10*10e+3 = 10k Ohm.";
+"_colorcode_t" = "色码基础";
+"_colorcode_desc" = "每个颜色代表一个数字.";
+"_colorcode_desc_2" = "三色环：数字-数字-指数，误差固定 ±20%.\n四或五色环：若干数字-指数-误差.\n六色环最后一环表示温度系数，使用较少.";
+"_about" = "关于此项目";
+"_proj_desc" = "这是一个开源项目；最初完全在 iPad 上使用 Playgrounds 开发.";
+
+//PrefsView
+"_num_on_pad" = "在色码键盘上显示数字";
+"_share" = "分享此应用";
+"_Review" = "评价此应用";
+"_issue" = "提交问题";
+"_Contact" = "联系开发者";
+"_settings" = "其他设定";
+
+//QuizView
+"_best" = "最高分";
+"_None" = "无";
+"_easy" = "简单";
+"_play_easy" = "简单模式";
+"_medium" = "中等";
+"_play_medium" = "中等模式";
+"_hard" = "困难";
+"_play_hard" = "困难模式";
+"_expert" = "专家";
+"_play_expert" = "专家模式";
+
+//GameView
+"_win" = "胜利";
+"_the" = "这个";
+"_color" = "颜色码";
+"_resistor" = "电阻";
+"_above_show" = "的";
+"_of" = "为";
+"_value" = "值";
+"_scale" = "指数值";
+"_tolerance" = "误差";
+"_lose" = "挑战失败";
+"_lose_tip" = "别忘了，速查表和模拟万用表在任何时候都可以使用. 加油!";
+"_sec" = "秒";
+"_time_used" = "已用时间";
+
+//CheatSheet
+"_clr_cs" = "色码速查表";

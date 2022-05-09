@@ -6,9 +6,9 @@ struct PrefsView: View {
     @State var prefsNumberOnColor = UserDefaults.standard.bool(forKey: "_NUM_ON_COLOR")
     
     let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
-    let appURL = URL(string: "https://apps.apple.com/cn/app/resistor-identifier/id1604042855")!
-    let reviewURL = URL(string: "itms-apps://itunes.apple.com/app/id1604042855?action=write-review")!
-    let githubURL = URL(string: "https://github.com/wangyiwei2015/Resistor-support/issues")!
+    let appURL = URL(string: "https://apps.apple.com/us/app/colorcode-challenge-resistor/id1622171134")!
+    let reviewURL = URL(string: "itms-apps://itunes.apple.com/app/id1622171134?action=write-review")!
+    let githubURL = URL(string: "https://github.com/wangyiwei2015/ColorCodeChallenge")!
     let emailAdd = URL(string: "mailto:wangyw.dev@outlook.com?subject=Feedback_R_\(Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String)")!
     
     var body: some View {
@@ -26,25 +26,25 @@ struct PrefsView: View {
             ScrollView(.vertical, showsIndicators: true) {
                 VStack(spacing: 20) {
                     Spacer(minLength: 20)
-                    Toggle("Numbers on color pad", isOn: $prefsNumberOnColor)
+                    Toggle("_num_on_pad", isOn: $prefsNumberOnColor)
                         .font(.title3).padding(8)
                         .onChange(of: prefsNumberOnColor, perform: {value in
                             UserDefaults.standard.set(value, forKey: "_NUM_ON_COLOR")
                         })
                     prefButton(systemImg: "square.and.arrow.up.fill",
-                        color: .green, title: "Share this app"
+                        color: .green, title: "_share"
                     ) {showsShare = true}
                     prefButton(systemImg: "star.fill",
-                        color: .blue, title: "Review"
+                        color: .blue, title: "_Review"
                     ) {openURL(reviewURL)}
                     prefButton(systemImg: "exclamationmark.circle.fill",
-                        color: .orange, title: "Submit issues"
+                        color: .orange, title: "_issue"
                     ) {openURL(githubURL)}
                     prefButton(systemImg: "envelope.badge.fill",
-                        color: .blue, title: "Contact"
+                        color: .blue, title: "_Contact"
                     ) {openURL(emailAdd)}
                     prefButton(systemImg: "gearshape.fill",
-                        color: .gray, title: "Other Settings"
+                        color: .gray, title: "_settings"
                     ) {openURL(URL(string: UIApplication.openSettingsURLString)!)}
                     Text("v\(version)").foregroundColor(.gray)
                         .padding(.bottom, 3)

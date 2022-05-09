@@ -4,9 +4,6 @@ struct ResistorRing: View {
     @Binding var ringColorIndex: [Int]
     var body: some View {
         GeometryReader {geo in
-            //let rect = geo.frame(in: .local)
-            //let w = rect.width
-            //let h = rect.height
             ZStack {
                 LinearGradient(colors: [Color(UIColor.systemGray4), Color(UIColor.systemGray)], startPoint: .top, endPoint: .bottom)
                 HStack {

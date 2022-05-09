@@ -64,7 +64,7 @@ struct QuizGameView: View {
                 Image(systemName: heart > 2 ? "heart.fill" : "heart")
             }.foregroundColor(.red)
             Spacer()
-            Text(gameEnded ? "You WIN" : "\(questionIndex)/\(levelCounts[gameMode.rawValue])")
+            Text(gameEnded ? "_win" : "\(questionIndex)/\(levelCounts[gameMode.rawValue])")
                 .font(.system(size: 20, weight: .regular, design: .monospaced))
             Spacer()
             Button {
@@ -100,12 +100,12 @@ struct QuizGameView: View {
                         .frame(width: 140, height: 50)
                 }
                 VStack {
-                    Text("The \(colors.count == 1 ? "color" : "resistor") above shows a")
+                    Text("\(localized("_the")) \(colors.count == 1 ? "\(localized("_color"))" : "\(localized("_resistor"))") \(localized("_above_show"))")
                     HStack {
                         Text(quiz.1.description)
                             .bold()
                             .foregroundColor(.accentColor)
-                        Text("of")
+                        Text("_of")
                     }
                 }
                 .font(.system(size: 20))
@@ -144,8 +144,8 @@ struct QuizGameView: View {
                 .foregroundColor(Color(UIColor.systemGray5))
                 .frame(width: 100, height: 100)
                 .padding()
-            Text("You lose").font(.title2)
-            Text("Remember that you can open the cheatsheet or multimeter on the top at any time. Good luck!")
+            Text("_lose").font(.title2)
+            Text("_lose_tip")
                 .padding()
             Spacer(minLength: 160)
         }
@@ -159,8 +159,8 @@ struct QuizGameView: View {
             Text(timeUsed < bestTimeSec ? "New Best!" : " ")
                 .font(.title).foregroundColor(.green)
                 .padding()
-            Text("Time used: \(String(format: "%1.1f", timeUsed)) sec")
-            Text("Best score: \(String(format: "%1.1f", bestTimeSec)) sec")
+            Text("\(localized("_time_used")): \(String(format: "%1.1f", timeUsed)) \(localized("_sec"))")
+            Text("\(localized("_best")): \(String(format: "%1.1f", bestTimeSec)) \(localized("_sec"))")
         }.onAppear {timeUsed = abs(startTime.timeIntervalSinceNow)}
     }
     
@@ -202,11 +202,11 @@ enum QuestionType: Int {
         case .none:
             return "<error>"
         case .value:
-            return "value"
+            return localized("value")
         case .scale:
-            return "scale"
+            return localized("scale")
         case .tolerance:
-            return "tolerance"
+            return localized("tolerance")
         }
     }
 }

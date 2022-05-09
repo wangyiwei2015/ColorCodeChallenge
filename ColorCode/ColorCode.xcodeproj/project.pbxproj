@@ -29,6 +29,7 @@
 		4D8FB9C928294E4E0072D4C0 /* R_Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB9B528294E4E0072D4C0 /* R_Ring.swift */; };
 		4D8FB9CA28294E4E0072D4C0 /* RIDView+computedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB9B628294E4E0072D4C0 /* RIDView+computedValues.swift */; };
 		4D8FB9CB28294E4E0072D4C0 /* MeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB9B728294E4E0072D4C0 /* MeterView.swift */; };
+		4D8FB9CF28294F2E0072D4C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FB9D128294F2E0072D4C0 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		4D8FB9B628294E4E0072D4C0 /* RIDView+computedValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIDView+computedValues.swift"; sourceTree = "<group>"; };
 		4D8FB9B728294E4E0072D4C0 /* MeterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterView.swift; sourceTree = "<group>"; };
 		4D8FB9CC28294EE30072D4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4D8FB9D028294F2E0072D4C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4D8FB9D228294F3B0072D4C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 				4D8FB9AD28294E4E0072D4C0 /* MultimeterView */,
 				4D8FB9A728294E4E0072D4C0 /* QuizView */,
 				4D8FB99728294E180072D4C0 /* Preview Content */,
+				4D8FB9D128294F2E0072D4C0 /* Localizable.strings */,
 			);
 			path = ColorCode;
 			sourceTree = "<group>";
@@ -190,6 +194,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4D8FB98528294E160072D4C0;
 			productRefGroup = 4D8FB98F28294E160072D4C0 /* Products */;
@@ -207,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8FB9A028294E3C0072D4C0 /* Assets.xcassets in Resources */,
+				4D8FB9CF28294F2E0072D4C0 /* Localizable.strings in Resources */,
 				4D8FB99928294E180072D4C0 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,11 +249,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		4D8FB9D128294F2E0072D4C0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D8FB9D028294F2E0072D4C0 /* en */,
+				4D8FB9D228294F3B0072D4C0 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4D8FB99A28294E180072D4C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -308,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -371,11 +391,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorCode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,11 +425,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorCode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct RIDView: View {
-    @State var ringColorIndex: [Int] = [5, 1, 3, 10]
-    @State var smtSilk: String = "471"
+    @State var ringColorIndex: [Int] = []
+    @State var smtSilk: String = ""
     @State var usingSMT = false
     @State var showsPrefs = false
     @State var showsInfo = false

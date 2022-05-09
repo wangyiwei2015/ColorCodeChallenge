@@ -17,24 +17,24 @@ struct InfoView: View {
     ]
     var body: some View {
         VStack {
-            Text("↓ swipe to dismiss").font(.title3)
+            Text("_dsms_msg").font(.title3)
                 .foregroundColor(.gray)
             ScrollView(.vertical, showsIndicators: true) {
                 VStack(alignment: .leading, spacing: 20) {
                     Group {
-                        LeftLabel("shippingbox.fill", "Usage")
-                        Text("Type in the values (numbers or colors) to identify the resistance.")
+                        LeftLabel("shippingbox.fill", "_Usage")
+                        Text("_usg_desc")
                     }
                     
                     Group {
                         Divider()
-                        LeftLabel("number.circle.fill", "Numeric Representations")
-                        Text("As SMD devices are tiny, engineers need to identify their values with as few numbers as possible. These are some of the rules:\n  • 'R', 'k', 'M'... replaces a floating point and the unit of (Ω, kΩ, MΩ, etc.), for example 6R8 = 6.8Ω and 4k7 = 4.7kΩ;\n  • A pure-number code uses its last digit as exponent, for example 103 = 10*10e+3 = 10k Ohm.")
+                        LeftLabel("number.circle.fill", "_numr")
+                        Text("_numr_desc")
                         Divider()
                     }
                     
-                    LeftLabel("paintpalette.fill", "Resistor Color Code Basis")
-                    Text("Each color represents a number.")
+                    LeftLabel("paintpalette.fill", "_colorcode_t")
+                    Text("_colorcode_desc")
                     ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top) {
                         Group {
@@ -57,12 +57,12 @@ struct InfoView: View {
                             }
                         }
                     }}.frame(height: 160)
-                    Text("When there are only 3 bands, simply use the second rule above. Its tolerance is ±20%.\nWhen there are 4 or 5 bands, the last digit is used to indicate tolerance. Then apply the rule above to the other digits.\n6-band resistors have an additional temperature coefficient, which is rarely used.")
+                    Text("_colorcode_desc_2")
                     
                     Group {
                         Divider()
-                        LeftLabel("swift", "About The Project")
-                        Text("This project is originally built with iPad after the release of the new Playgrounds as an IDE. Then Xcode on M1 Mac is used to accelerate further development. The icon was designed with Sketch on macOS.")
+                        LeftLabel("swift", "_about")
+                        Text("_proj_desc")
                         Spacer(minLength: 20)
                     }
                 }.padding()

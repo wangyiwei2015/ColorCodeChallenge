@@ -14,25 +14,25 @@ struct QuizView: View {
         ZStack {
             VStack {
                 Group {
-                    Text("Best Scores").bold().padding(.bottom)
-                    Text("Easy: \(bestScores[0] > 0 ? "\(String(format: "%1.1f", bestScores[0]))s" : "None")")
-                    Text("Med: \(bestScores[1] > 0 ? "\(String(format: "%1.1f", bestScores[1]))s" : "None")")
-                    Text("Hard: \(bestScores[2] > 0 ? "\(String(format: "%1.1f", bestScores[2]))s" : "None")")
-                    Text("Expert: \(bestScores[3] > 0 ? "\(String(format: "%1.1f", bestScores[3]))s" : "None")")
+                    Text("_best").bold().padding(.bottom)
+                    Text("\(localized("_easy")): \(bestScores[0] > 0 ? "\(String(format: "%1.1f", bestScores[0]))s" : "\(localized("_None"))")")
+                    Text("\(localized("_medium")): \(bestScores[1] > 0 ? "\(String(format: "%1.1f", bestScores[1]))s" : "\(localized("_None"))")")
+                    Text("\(localized("_hard")): \(bestScores[2] > 0 ? "\(String(format: "%1.1f", bestScores[2]))s" : "\(localized("_None"))")")
+                    Text("\(localized("_expert")): \(bestScores[3] > 0 ? "\(String(format: "%1.1f", bestScores[3]))s" : "\(localized("_None"))")")
                 }.font(.system(size: 22))
-                Button("🙃 Play easy") {
+                Button("🙃 \(localized("_play_easy"))") {
                     startGame(.easy)
                 }.buttonStyle(QuizButtonStyle())
                     .padding(.top, 40)
-                Button("🤔 Play medium") {
+                Button("🤔 \(localized("_play_medium"))") {
                     startGame(.medium)
                 }.buttonStyle(QuizButtonStyle())
                     .padding(.top, 10)
-                Button("🤯 Play hard") {
+                Button("🤯 \(localized("_play_hard"))") {
                     startGame(.hard)
                 }.buttonStyle(QuizButtonStyle())
                     .padding(.top, 10)
-                Button("☠️ Play expert") {
+                Button("☠️ \(localized("_play_expert"))") {
                     startGame(.expert)
                 }.buttonStyle(QuizButtonStyle())
                     .padding(.top, 10)

@@ -30,3 +30,7 @@ struct ShareView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
     }
 }
+
+func localized(_ key: String) -> String {
+    NSLocalizedString(key, comment: "")
+}

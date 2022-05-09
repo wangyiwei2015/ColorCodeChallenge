@@ -7,7 +7,7 @@ struct ColorSheetView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack(alignment: .leading, spacing: 10) {
-                Text("Color Cheatsheet").bold()
+                Text("_clr_cs").bold()
                     .padding(.vertical)
                 HStack {
                     Color.back

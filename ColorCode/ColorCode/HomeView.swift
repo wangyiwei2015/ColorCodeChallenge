@@ -13,7 +13,7 @@ struct HomeView: View {
                 Button {
                     isFirstLaunch = true
                 } label: {
-                    Text("- Read intro again -")
+                    Text("read_intro")
                         .bold().foregroundColor(.gray)
                 }.padding(.bottom, 30)
             }
