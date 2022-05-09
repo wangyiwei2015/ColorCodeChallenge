@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D8FB94D28294B6A0072D4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FB94C28294B6A0072D4C0 /* Assets.xcassets */; };
+		4D8FB95028294B6A0072D4C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FB94F28294B6A0072D4C0 /* Preview Assets.xcassets */; };
+		4D8FB97028294C860072D4C0 /* LeftLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95928294C860072D4C0 /* LeftLabel.swift */; };
+		4D8FB97128294C860072D4C0 /* RIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95A28294C860072D4C0 /* RIDView.swift */; };
+		4D8FB97228294C860072D4C0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95B28294C860072D4C0 /* InfoView.swift */; };
+		4D8FB97328294C860072D4C0 /* NumberKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95C28294C860072D4C0 /* NumberKeyboard.swift */; };
+		4D8FB97428294C860072D4C0 /* PrefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95D28294C860072D4C0 /* PrefsView.swift */; };
+		4D8FB97528294C860072D4C0 /* ColorKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95E28294C860072D4C0 /* ColorKeyboard.swift */; };
+		4D8FB97628294C860072D4C0 /* R_SMT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB95F28294C860072D4C0 /* R_SMT.swift */; };
+		4D8FB97728294C860072D4C0 /* R_Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96028294C860072D4C0 /* R_Ring.swift */; };
+		4D8FB97828294C860072D4C0 /* RIDView+computedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96128294C860072D4C0 /* RIDView+computedValues.swift */; };
+		4D8FB97928294C860072D4C0 /* MeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96228294C860072D4C0 /* MeterView.swift */; };
+		4D8FB97B28294C860072D4C0 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96428294C860072D4C0 /* IntroView.swift */; };
+		4D8FB97C28294C860072D4C0 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96628294C860072D4C0 /* QuizView.swift */; };
+		4D8FB97D28294C860072D4C0 /* QuizGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96728294C860072D4C0 /* QuizGameView.swift */; };
+		4D8FB97E28294C860072D4C0 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96828294C860072D4C0 /* QuizData.swift */; };
+		4D8FB97F28294C860072D4C0 /* QuizCustomStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96928294C860072D4C0 /* QuizCustomStyles.swift */; };
+		4D8FB98028294C860072D4C0 /* ColorSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96A28294C860072D4C0 /* ColorSheetView.swift */; };
+		4D8FB98128294C860072D4C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96B28294C860072D4C0 /* HomeView.swift */; };
+		4D8FB98228294C860072D4C0 /* resistorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96D28294C860072D4C0 /* resistorApp.swift */; };
+		4D8FB98328294C860072D4C0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96E28294C860072D4C0 /* Helpers.swift */; };
+		4D8FB98428294C860072D4C0 /* ResistorRingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB96F28294C860072D4C0 /* ResistorRingInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D8FB94528294B6A0072D4C0 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8FB94C28294B6A0072D4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D8FB94F28294B6A0072D4C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D8FB95628294B980072D4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4D8FB95728294C850072D4C0 /* ColorCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorCode-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D8FB95928294C860072D4C0 /* LeftLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftLabel.swift; sourceTree = "<group>"; };
+		4D8FB95A28294C860072D4C0 /* RIDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RIDView.swift; sourceTree = "<group>"; };
+		4D8FB95B28294C860072D4C0 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		4D8FB95C28294C860072D4C0 /* NumberKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberKeyboard.swift; sourceTree = "<group>"; };
+		4D8FB95D28294C860072D4C0 /* PrefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsView.swift; sourceTree = "<group>"; };
+		4D8FB95E28294C860072D4C0 /* ColorKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorKeyboard.swift; sourceTree = "<group>"; };
+		4D8FB95F28294C860072D4C0 /* R_SMT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R_SMT.swift; sourceTree = "<group>"; };
+		4D8FB96028294C860072D4C0 /* R_Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R_Ring.swift; sourceTree = "<group>"; };
+		4D8FB96128294C860072D4C0 /* RIDView+computedValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIDView+computedValues.swift"; sourceTree = "<group>"; };
+		4D8FB96228294C860072D4C0 /* MeterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterView.swift; sourceTree = "<group>"; };
+		4D8FB96428294C860072D4C0 /* IntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroView.swift; path = ../../ColorCodeChallenge.swiftpm/IntroView.swift; sourceTree = "<group>"; };
+		4D8FB96628294C860072D4C0 /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		4D8FB96728294C860072D4C0 /* QuizGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizGameView.swift; sourceTree = "<group>"; };
+		4D8FB96828294C860072D4C0 /* QuizData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		4D8FB96928294C860072D4C0 /* QuizCustomStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCustomStyles.swift; sourceTree = "<group>"; };
+		4D8FB96A28294C860072D4C0 /* ColorSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSheetView.swift; sourceTree = "<group>"; };
+		4D8FB96B28294C860072D4C0 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../ColorCodeChallenge.swiftpm/HomeView.swift; sourceTree = "<group>"; };
+		4D8FB96D28294C860072D4C0 /* resistorApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resistorApp.swift; sourceTree = "<group>"; };
+		4D8FB96E28294C860072D4C0 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4D8FB96F28294C860072D4C0 /* ResistorRingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResistorRingInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D8FB94228294B6A0072D4C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D8FB93C28294B6A0072D4C0 = {
+			isa = PBXGroup;
+			children = (
+				4D8FB94728294B6A0072D4C0 /* ColorCode */,
+				4D8FB94628294B6A0072D4C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D8FB94628294B6A0072D4C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FB94528294B6A0072D4C0 /* Challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D8FB94728294B6A0072D4C0 /* ColorCode */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FB96B28294C860072D4C0 /* HomeView.swift */,
+				4D8FB96428294C860072D4C0 /* IntroView.swift */,
+				4D8FB96C28294C860072D4C0 /* Model */,
+				4D8FB95828294C860072D4C0 /* MultimeterView */,
+				4D8FB96528294C860072D4C0 /* QuizView */,
+				4D8FB95628294B980072D4C0 /* Info.plist */,
+				4D8FB94C28294B6A0072D4C0 /* Assets.xcassets */,
+				4D8FB94E28294B6A0072D4C0 /* Preview Content */,
+				4D8FB95728294C850072D4C0 /* ColorCode-Bridging-Header.h */,
+			);
+			path = ColorCode;
+			sourceTree = "<group>";
+		};
+		4D8FB94E28294B6A0072D4C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FB94F28294B6A0072D4C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D8FB95828294C860072D4C0 /* MultimeterView */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FB95928294C860072D4C0 /* LeftLabel.swift */,
+				4D8FB95A28294C860072D4C0 /* RIDView.swift */,
+				4D8FB95B28294C860072D4C0 /* InfoView.swift */,
+				4D8FB95C28294C860072D4C0 /* NumberKeyboard.swift */,
+				4D8FB95D28294C860072D4C0 /* PrefsView.swift */,
+				4D8FB95E28294C860072D4C0 /* ColorKeyboard.swift */,
+				4D8FB95F28294C860072D4C0 /* R_SMT.swift */,
+				4D8FB96028294C860072D4C0 /* R_Ring.swift */,
+				4D8FB96128294C860072D4C0 /* RIDView+computedValues.swift */,
+				4D8FB96228294C860072D4C0 /* MeterView.swift */,
+			);
+			name = MultimeterView;
+			path = ../../ColorCodeChallenge.swiftpm/MultimeterView;
+			sourceTree = "<group>";
+		};
+		4D8FB96528294C860072D4C0 /* QuizView */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FB96628294C860072D4C0 /* QuizView.swift */,
+				4D8FB96728294C860072D4C0 /* QuizGameView.swift */,
+				4D8FB96828294C860072D4C0 /* QuizData.swift */,
+				4D8FB96928294C860072D4C0 /* QuizCustomStyles.swift */,
+				4D8FB96A28294C860072D4C0 /* ColorSheetView.swift */,
+			);
+			name = QuizView;
+			path = ../../ColorCodeChallenge.swiftpm/QuizView;
+			sourceTree = "<group>";
+		};
+		4D8FB96C28294C860072D4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FB96D28294C860072D4C0 /* resistorApp.swift */,
+				4D8FB96E28294C860072D4C0 /* Helpers.swift */,
+				4D8FB96F28294C860072D4C0 /* ResistorRingInfo.swift */,
+			);
+			name = Model;
+			path = ../../ColorCodeChallenge.swiftpm/Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D8FB94428294B6A0072D4C0 /* ColorCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D8FB95328294B6A0072D4C0 /* Build configuration list for PBXNativeTarget "ColorCode" */;
+			buildPhases = (
+				4D8FB94128294B6A0072D4C0 /* Sources */,
+				4D8FB94228294B6A0072D4C0 /* Frameworks */,
+				4D8FB94328294B6A0072D4C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorCode;
+			productName = ColorCode;
+			productReference = 4D8FB94528294B6A0072D4C0 /* Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D8FB93D28294B6A0072D4C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					4D8FB94428294B6A0072D4C0 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 4D8FB94028294B6A0072D4C0 /* Build configuration list for PBXProject "ColorCode" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D8FB93C28294B6A0072D4C0;
+			productRefGroup = 4D8FB94628294B6A0072D4C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D8FB94428294B6A0072D4C0 /* ColorCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D8FB94328294B6A0072D4C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8FB95028294B6A0072D4C0 /* Preview Assets.xcassets in Resources */,
+				4D8FB94D28294B6A0072D4C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D8FB94128294B6A0072D4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8FB98428294C860072D4C0 /* ResistorRingInfo.swift in Sources */,
+				4D8FB97728294C860072D4C0 /* R_Ring.swift in Sources */,
+				4D8FB97528294C860072D4C0 /* ColorKeyboard.swift in Sources */,
+				4D8FB97928294C860072D4C0 /* MeterView.swift in Sources */,
+				4D8FB98328294C860072D4C0 /* Helpers.swift in Sources */,
+				4D8FB97D28294C860072D4C0 /* QuizGameView.swift in Sources */,
+				4D8FB97428294C860072D4C0 /* PrefsView.swift in Sources */,
+				4D8FB98028294C860072D4C0 /* ColorSheetView.swift in Sources */,
+				4D8FB97C28294C860072D4C0 /* QuizView.swift in Sources */,
+				4D8FB97128294C860072D4C0 /* RIDView.swift in Sources */,
+				4D8FB97B28294C860072D4C0 /* IntroView.swift in Sources */,
+				4D8FB98128294C860072D4C0 /* HomeView.swift in Sources */,
+				4D8FB97628294C860072D4C0 /* R_SMT.swift in Sources */,
+				4D8FB97F28294C860072D4C0 /* QuizCustomStyles.swift in Sources */,
+				4D8FB97328294C860072D4C0 /* NumberKeyboard.swift in Sources */,
+				4D8FB97828294C860072D4C0 /* RIDView+computedValues.swift in Sources */,
+				4D8FB97228294C860072D4C0 /* InfoView.swift in Sources */,
+				4D8FB97E28294C860072D4C0 /* QuizData.swift in Sources */,
+				4D8FB98228294C860072D4C0 /* resistorApp.swift in Sources */,
+				4D8FB97028294C860072D4C0 /* LeftLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D8FB95128294B6A0072D4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D8FB95228294B6A0072D4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D8FB95428294B6A0072D4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_ASSET_PATHS = "\"ColorCode/Preview Content\"";
+				DEVELOPMENT_TEAM = JS2ME2LTBF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorCode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.colorcodechallenge;
+				PRODUCT_NAME = Challenge;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorCode/ColorCode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D8FB95528294B6A0072D4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_ASSET_PATHS = "\"ColorCode/Preview Content\"";
+				DEVELOPMENT_TEAM = JS2ME2LTBF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorCode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.colorcodechallenge;
+				PRODUCT_NAME = Challenge;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorCode/ColorCode-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D8FB94028294B6A0072D4C0 /* Build configuration list for PBXProject "ColorCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D8FB95128294B6A0072D4C0 /* Debug */,
+				4D8FB95228294B6A0072D4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D8FB95328294B6A0072D4C0 /* Build configuration list for PBXNativeTarget "ColorCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D8FB95428294B6A0072D4C0 /* Debug */,
+				4D8FB95528294B6A0072D4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D8FB93D28294B6A0072D4C0 /* Project object */;
+}
