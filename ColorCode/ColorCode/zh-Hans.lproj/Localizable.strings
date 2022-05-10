@@ -58,8 +58,8 @@
 "_win" = "胜利";
 "_the" = "这个";
 "_color" = "颜色码";
-"_resistor" = "电阻";
-"_above_show" = "的";
+"_resistor" = "电阻色环";
+"_above_show" = "代表的";
 "_of" = "为";
 "_value" = "值";
 "_scale" = "指数值";

@@ -202,11 +202,11 @@ enum QuestionType: Int {
         case .none:
             return "<error>"
         case .value:
-            return localized("value")
+            return localized("_value")
         case .scale:
-            return localized("scale")
+            return localized("_scale")
         case .tolerance:
-            return localized("tolerance")
+            return localized("_tolerance")
         }
     }
 }
