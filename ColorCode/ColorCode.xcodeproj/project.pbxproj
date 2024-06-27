@@ -313,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -368,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -385,13 +385,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorCode/Preview Content\"";
 				DEVELOPMENT_TEAM = JS2ME2LTBF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorCode/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
+				INFOPLIST_KEY_CFBundleDisplayName = ColorCode;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -402,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.colorcodechallenge;
 				PRODUCT_NAME = Challenge;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -419,13 +420,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorCode/Preview Content\"";
 				DEVELOPMENT_TEAM = JS2ME2LTBF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorCode/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
+				INFOPLIST_KEY_CFBundleDisplayName = ColorCode;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -436,7 +438,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.colorcodechallenge;
 				PRODUCT_NAME = Challenge;
 				SWIFT_EMIT_LOC_STRINGS = YES;

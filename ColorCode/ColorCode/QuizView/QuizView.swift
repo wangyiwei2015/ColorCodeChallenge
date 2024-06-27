@@ -61,3 +61,7 @@ let defaultsKeys: [String] = [
 enum GameMode: Int {
     case easy, medium, hard, expert, none
 }
+
+#Preview {
+    QuizView()
+}

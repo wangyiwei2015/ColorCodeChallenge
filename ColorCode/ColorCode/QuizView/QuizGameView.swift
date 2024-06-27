@@ -20,6 +20,8 @@ struct QuizGameView: View {
     let startTime = Date()
     @State var timeUsed: TimeInterval = 0
     
+    @State var streak = 0
+    
     var body: some View {
         ZStack {
             VStack { //top bar
@@ -175,11 +177,16 @@ struct QuizGameView: View {
             if quiz.3 == index {
                 btnColors[index] = .green
                 if !gameEnded {
+                    streak += 1
+                    if streak >= 3 && heart < 3 {
+                        heart += 1
+                    }
                     nextQues()
                 }
             } else {
                 btnColors[index] = .red
                 heart -= 1
+                streak = 0
             }
         }
     }
@@ -209,4 +216,8 @@ enum QuestionType: Int {
             return localized("_tolerance")
         }
     }
+}
+
+#Preview {
+    QuizGameView(bestTimeSec: .constant(10), gameMode: .constant(.easy))
 }

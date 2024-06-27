@@ -7,13 +7,13 @@
 */
 
 //HomeView
-"read_intro" = "- Read intro again -";
+"read_intro" = "- About -";
 
 //IntroView
 "_Welcome" = "Welcome";
 "_desc" = "The game is about colors on resistors.";
 "_Challenges" = "Challenges";
-"_cha_desc_1" = "There are 4 levels to challenge. Try to select the correct values as fast as possible.";
+"_cha_desc_1" = "There are 4 levels to challenge. Try to select the correct values as fast as possible. When a wrong answer is selected, you will lose one heart, but when answered correctly for 3 times, you will get one heart back.";
 "_cha_desc_2" = "Knowledge in electronics is related, but not required. Don't worry, as the tools below are always available.";
 "_Multimeter" = "Multimeter";
 "_meter_desc" = "You can get the properties of a resistor by typing its color or silk (for SMD*). Note that the values you input may not exist in the real world.";
