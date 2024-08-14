@@ -30,6 +30,7 @@
 		4D8FB9CA28294E4E0072D4C0 /* RIDView+computedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB9B628294E4E0072D4C0 /* RIDView+computedValues.swift */; };
 		4D8FB9CB28294E4E0072D4C0 /* MeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FB9B728294E4E0072D4C0 /* MeterView.swift */; };
 		4D8FB9CF28294F2E0072D4C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FB9D128294F2E0072D4C0 /* Localizable.strings */; };
+		B3F2D1042C6CFFF900B60AC1 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B3F2D1032C6CFFF900B60AC1 /* InfoPlist.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		4D8FB9CC28294EE30072D4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4D8FB9D028294F2E0072D4C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4D8FB9D228294F3B0072D4C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B3F2D1032C6CFFF900B60AC1 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4D8FB9A728294E4E0072D4C0 /* QuizView */,
 				4D8FB99728294E180072D4C0 /* Preview Content */,
 				4D8FB9D128294F2E0072D4C0 /* Localizable.strings */,
+				B3F2D1032C6CFFF900B60AC1 /* InfoPlist.xcstrings */,
 			);
 			path = ColorCode;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				4D8FB9A028294E3C0072D4C0 /* Assets.xcassets in Resources */,
 				4D8FB9CF28294F2E0072D4C0 /* Localizable.strings in Resources */,
+				B3F2D1042C6CFFF900B60AC1 /* InfoPlist.xcstrings in Resources */,
 				4D8FB99928294E180072D4C0 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,13 +389,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorCode/Preview Content\"";
 				DEVELOPMENT_TEAM = JS2ME2LTBF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorCode/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ColorCode;
+				INFOPLIST_KEY_CFBundleDisplayName = "ΩhmGame";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.3;
+				MARKETING_VERSION = 2.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.colorcodechallenge;
 				PRODUCT_NAME = Challenge;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -420,13 +424,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorCode/Preview Content\"";
 				DEVELOPMENT_TEAM = JS2ME2LTBF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorCode/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ColorCode;
+				INFOPLIST_KEY_CFBundleDisplayName = "ΩhmGame";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.3;
+				MARKETING_VERSION = 2.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.colorcodechallenge;
 				PRODUCT_NAME = Challenge;
 				SWIFT_EMIT_LOC_STRINGS = YES;
